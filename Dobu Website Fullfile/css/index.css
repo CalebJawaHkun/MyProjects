@@ -1,0 +1,105 @@
+.home {
+	padding: 0;
+
+}
+h2, h3 { color: red; }
+.rows + .rows {
+	margin-top: 1.5em;
+}
+
+.slide {
+	min-height: 100vh;
+	background-size: cover !important;
+	background-positoin: center !important;
+	padding: 2rem 9%;
+	display: flex;
+	color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+.slide span {
+	color: red;
+}
+
+.btn {
+	padding: .4em 1.5em;
+	border-radius: 1em;
+	background: red;
+	font-weight: bolder;
+	color: white;
+
+}
+.btn:hover {
+	background: black;
+}
+.home .container h2 {
+	text-align: center;
+}
+.about, 
+.rows, 
+.text {
+	display: flex;
+}
+.about, .text, .rows.three {
+	flex-direction: column;
+}
+
+.rows {
+	min-height: 300px;
+}
+
+
+.rows.one {
+	background-image: url(../imgs/ci-martial2.webp);
+	background-position: center;
+	background-size: cover;
+	padding: 1em;
+}
+.rows.one > .text {
+	text-align: right;
+	
+}
+
+.rows.one p {
+	color: white;
+}
+.rows.two,
+.rows.two > .logos {
+	display: flex;
+
+}
+
+.rows.two {
+	justify-content: space-around;
+}
+.logos {
+	flex: 0 1 30%;
+	text-align: center;
+}
+.text {
+	flex: 1;
+	padding-right: 1em;
+	justify-content: center;
+	text-align: center;
+}
+.logos {
+	
+	flex-wrap: wrap;
+}
+.logos > div {
+	flex: 1 1 50%;
+	padding: 0 1em 1em 0;
+}
+.logos img {
+	width: 100%;
+}
+.rows.three {
+	padding: 0 20%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+

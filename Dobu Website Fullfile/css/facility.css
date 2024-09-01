@@ -1,0 +1,117 @@
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+	color: red;
+	font-weight: bolder;
+}
+body {
+	margin: 0;
+}
+h2 {
+	text-align: center;
+}
+ {
+	border: 1px solid black;
+}
+.row.one .intro {
+	display: flex;
+	align-items: stretch;
+}
+
+.intro > div {
+	flex: 1 1 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.intro > ul {
+	flex: 1 1 40%;
+	text-align: center;
+}
+.intro > ul > li:before {
+	content: '✓';
+}
+
+/* Second row */
+
+.tground > div,
+.row.five .container > div {
+	display: flex;
+}
+.tground div:nth-child(1),
+.row.five .container > div {
+	background-size: cover !important;
+	background-position: center !important;
+	min-height: 90vh;
+	text-align: left;
+	align-items: flex-end;
+	justify-content: flex-start;
+	margin-bottom: 1em;
+
+}
+.tground div:nth-child(1) > p,
+.row.five .container > div p {
+	flex: 0 1 50%;
+	color: white;
+	padding: 0 1em;
+}
+
+.tground div:nth-child(2) img {
+	display: block;
+	max-width: 33.33%;
+}
+
+/* third row : sauna */
+
+.row.three img {
+	display: inline-block;
+}
+.row.three {
+	text-align: center;
+}
+
+/* fourth row : Gum */
+
+.row.four img {
+	width: 100%;
+}
+
+/* Fifth row : shower */
+
+.row.five .container > div {
+	background-image: url(../imgs/s1.jpg);
+}
+
+@media(max-width: 768px) {
+	{
+		display: block;
+		align-items: stretch;
+	}
+
+	.row.one ul {
+		margin: 0;
+		padding: 0;
+	}
+	.row.one .intro,
+	.tground div:nth-child(2) {
+		display: block;
+	}
+	.tground div:nth-child(2) img
+	 {
+		margin-top: .5em;
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.row.three img {
+		width: 100%;
+	}
+
+	.row.five .container > div {
+		background-image: url(../imgs/s1cropped.jpg);
+	}
+
+
+}

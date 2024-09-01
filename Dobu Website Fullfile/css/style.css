@@ -1,0 +1,283 @@
+:root {
+	font: 1.2rem/1.1 'Oswald', sans-serif;
+	box-sizing: border-box;
+}
+*, :before, :after {
+	box-sizing: inherit;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+
+}
+h2 {
+	color: red;
+}
+body {
+	margin: 0;
+	background: #eee;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 5rem;
+	overflow-x: hidden;
+	color: black;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+
+}
+
+header {
+	padding:  0 1.5em;
+	positin: fixed;
+	top: 0; left: 0; right: 0;
+	background: gold;
+
+}
+header .container {
+	display: flex;
+	padding: 1.5em 1em;
+}
+
+
+header .ftwo {
+	flex: 0  1 80%;
+	margin: 0 auto;
+}
+.logo {
+	font-size: 3rem;
+}
+.logo > span {
+	color: red;
+}
+
+
+.navbar {
+	display: flex;
+	margin-top: 1em;
+	justify-content: space-around;
+}
+.navbar a {
+	padding: .5em 1em;
+	border-radius: .5em;
+
+}
+
+.navbar a:hover {
+	background: red;
+	color: white;
+}
+
+#menubtn {
+	font-size: 1.5rem;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+footer {
+	background: gold;
+}
+
+
+footer .container {
+	padding: 1em;
+	display: flex;
+	
+}
+
+footer .tile {
+	flex: 1  1 0%;
+}
+.tile nav {
+	display: flex;
+
+}
+
+.nav-cards > a {
+	display: block;
+}
+.nav-cards > a + a {
+	display: block;
+	margin-top: .5em;
+}
+.nav-cards + .nav-cards {
+	margin-left: 4em;
+}
+
+.exlinks  {
+	display: flex;
+	align-items: baseline;
+	text-align: left;
+	justify-content: space-around;
+}
+.exlinks > * {
+	flex: 0 1 17%;
+}
+.social {
+	margin-top: 1em;
+}
+.social a {
+	font-size: 1.2em;
+
+}
+.social a + a {
+	margin-left: .5em;
+}
+.social a:hover {
+	transtion: .1s linear;
+	color: red;
+}
+
+.tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.tile.two {
+	font-size: .9rem;
+	display: flex;
+	flex-direction: column;
+}
+ .tile.two > * {
+ 	flex: 1;
+ }
+
+
+.footer a:hover {
+	color: red;
+}
+.footer button:hover {
+	background: black;
+}
+.footer form {
+	text-align: center;
+	border: 2px solid white;
+	border-radius: .5em;
+	padding: .5em;
+}
+.sub input {
+	border-bottom: 1px dashed black;
+	display: inline-block;
+	width: 100%;
+	height: 1.5rem;
+	background: none;
+}
+.sub input:hover {
+	background: none;
+	border-bottom: 1px solid white;
+	transition: all .5s linear;
+
+}
+.sub button {
+	padding: .5em 1em;
+	border-radius: .5em;
+	background: red;
+	color: white;
+	font-weight: bolder;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+@media (max-width: 912px) {
+
+	:root {
+		font-size: 1rem;
+	}
+
+	header {
+		padding: 0;
+	}
+	header .container {
+		padding: 0 1em;
+	}
+
+	footer .container {
+		
+		display: block;
+	}
+
+}
+
+@media (max-width: 768px) {
+	header {
+		padding: 0;
+	}
+
+	.navbar {
+		position: absolute;
+		top: 4%; left: 0; right: 0;
+		background: #eee;
+		display: block;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.navbar a {
+		border-radius: initial;
+		display: block;
+		padding: 1em 0;
+		text-align: center;
+	}
+
+	#menubtn {
+		visibility: revert;
+		font-size: 2rem;
+		cursor: pointer;
+		position: absolute;
+		top: 1%;
+		left: 90%;
+	}
+
+	.fa-times {
+		transform: rotate(180deg);
+	}
+
+	.box-container {
+		flex-flow: row-wrap;
+	}
+
+
+	.tile.one nav {
+		justify-content: space-around;
+	}
+	.exlinks {
+		display: flex;
+		justify-content: space-betweeen;
+	}
+
+	.rows.two {
+		flex-direction: column;
+		padding: 0 1em;
+	}
+
+	.rows.two .logos > div {
+		flex: 1 1 0%;
+		
+	}	
+	.logos > div + div {
+		margin-left: 1em;
+	}
+	.social a {
+		font-size: 1em;
+
+	}
+
+}
+/* I've learned that
+if you want to use binary selectors you cannot seperate them with space in css.
+javascript allows things that dont exit in the markup to pop up and be selected magically.
+its better to imagine the rough design on the paper and jot down the equivalent properties before
+diving into coding.

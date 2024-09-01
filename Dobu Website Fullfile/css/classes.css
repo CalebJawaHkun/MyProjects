@@ -1,0 +1,121 @@
+.row {
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+.row .image {
+	flex: 0 1 20%;
+	display: flex;
+
+}
+h2 {
+	text-align: center;
+}
+.row .text {
+	flex: 0 1 65%;
+}
+.image img {
+	margin: auto;
+	width: 90%;
+	border-radius: 10em;
+}
+
+.row.r {
+	text-align: right;
+}
+.row.r .text {
+	padding-right: 1em;
+}
+
+
+.row.l .text {
+	padding-left: 1em;
+}
+
+table,
+table * {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table {
+	background: white;
+	margin: 2em 0;
+	min-height: 500px;
+
+}
+
+thead {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+thead td {
+	padding: 1em 0;
+
+}
+
+tr > td:nth-child(1) {
+	min-width: 8rem;
+}
+
+.btn {
+	padding: .3em 1em;
+	background: red;
+	color: white;
+	border-radius: .5em;
+	margin-top: .5em;
+}
+
+.btn:hover {
+	background: black;
+}
+
+
+@media(max-width: 720px) {
+	.row .text,
+	.row .image {
+		flex: 1 1 50%;
+	}
+	.row, .row.r {
+		text-align: center;
+	}
+
+	.image img {
+		width: 70%;
+	}
+
+	table > thead {
+		display: none;
+	}
+	table {
+		font-size: 1rem;
+	}
+	table,
+	table * {
+		border: none;
+		display: block;
+		width: 100%;
+	}
+
+	tr {
+		margin-top: 1em;
+		border-top: 1px solid black;
+	}
+	td {
+
+		text-align: right;
+		padding: 1em;
+		position: relative;
+	}
+	table td:before {
+		content: attr(data-label) ':';
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 1rem;
+		font-weight: bold;
+		text-align: left;
+	}
+
+}

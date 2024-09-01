@@ -1,0 +1,106 @@
+h2 {
+	text-align: center;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+}
+
+.hm, .hm > div,
+.am, .fc  {
+	display: flex;
+	justify-content: center;
+}
+
+
+.hm > img {
+	border-radius: 2em;
+	flex: 0 1 20%;
+	margin: auto;
+	width: 100%;
+}
+.hm > div {
+	flex-direction: column;
+	flex: 0 1 50%;
+}
+
+
+.card {
+	text-align: center;
+	flex-basis: 20%;
+	margin-left: 1em;
+	border-radius: .5em;
+	background: gold;
+	padding-bottom: 1em;
+	box-shadow: 0 2px 2px 2px black;
+}
+.card img {
+	border-radius: .5em;
+}
+
+.coms {
+	border: 2px solid black;
+	border-radius: .5em;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+.coms > div {
+	display: flex;
+	font-size: .8rem;
+}
+.coms > blockquote {
+	font-size: 1.1rem;
+}
+.pinfo {
+	padding-left: .5em;
+}
+.pinfo > * {
+	margin: 0;
+}
+.coms img {
+	width: 5%;
+	height: 5%;
+	border-radius: 7.5em;
+}
+
+@media(max-width: 780px) {
+	:root {
+		font-size: 1rem;
+	}
+	.hm, .hm > div {
+		display: flex;
+		flex-direction: column;
+	}
+	.hm > img {
+		width: 100%;
+		border-radius: initial;
+	}
+	.hm > div {
+		text-align: center;
+	}
+
+	.am, .fc,
+	.am > *, .fc > * {
+		display: block;
+	}
+	.card {
+		text-align: center;
+		flex-basis: 20%;
+		margin: 0;
+		margin-bottom: 1em;
+		border-radius: .5em;
+		background: gold;
+		padding-bottom: 1em;
+	}
+
+	.card img {
+		width: 100%;
+	}
+
+	.coms img {
+		width: 15%;
+		height: 15%;
+		border-radius: 7.5em;
+	}
+}

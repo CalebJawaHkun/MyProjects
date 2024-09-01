@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Sign Up </title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+		<link rel="icon" type="image/png" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="../imgs/favicon/site.webmanifest">
+		<link rel="mask-icon" href="../imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<script src="https://kit.fontawesome.com/e39a0a873c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../css/signup.css">
+		 <script src="../js/RegistrationForm.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="fone"> 
+					<a href="index.html" class="logo">
+						<span>Do</span>Bu 
+					</a>
+				</div>
+				<i class="fa-solid fa-bars" id="menubtn"></i>
+				<div class="ftwo"> 
+					<nav class="navbar">
+						<a href="facility.html"> Facilities </a>
+						<a href="instructors.html"> Instrutors </a>
+						<a href="classes.html"> Classes </a>
+						<a href="services.html"> Services </a>
+						<a href="signup.html" class="wtf" style="border: 2px solid black;"> Sign Up Now </a>
+						<a href="adminlogin.html"> Admin Login </a>
+					</nav>
+				</div>
+			</div>
+			
+		</header>
+		
+		<section class="form">
+
+			<div class="container" onload="document.registration.user_name.focus();">
+				<h2> Sign Up </h2>
+				<form name='registration' onSubmit="return formValidation();" method="GET" action="thankyou.html">
+			        <div class="name">
+						<label for="user-name">Name:</label>
+				        <input 
+				        	type="text" 
+				        	name="user_name" 
+				        	id="user_name" 
+				        	size="50" 
+				        	placeholder="Enter User Name here" required />
+			        </div>
+			        <div class="email">
+						<label for="email">Email:</label>
+				        <input 
+				        	type="email" 
+				        	name="email" 
+				        	id="email" 
+				        	size="50" 
+				        	placeholder="Enter your email here" required />
+			        </div>
+			        <div class="extra">
+			        	<div class="ops">
+		 					<label for="ddlgender">Gender:</label>
+					        <select name="ddlgender" id="ddlgender">
+					            <option value="male">male</option>
+					            <option value="female">female</option>
+					        </select>
+			        	</div>
+			        	<div class="ops">
+		 					<label for="pp"> Prefered Class </label>
+					        <select id="pp">
+					            <option >Basic</option>
+					            <option >Intermediate</option>
+					            <option >Advanced</option>
+					            <option >Elite</option>
+					            <option >Private Tuition</option>
+					            <option >Junior</option>
+					            <option >Self Defence Course</option>
+					            <option >Privat Fitness Training</option>
+					        </select>
+			        	</div>
+			        </div>
+			        <div class="buts">
+			        	<button 
+			        	type="submit" 
+			        	name="submit" 
+			        	value="Submit" 
+			        	/> Submit </button>
+			        </div>
+
+			        
+
+			    </form>
+			</div>
+		</section>
+		<footer class="lis">
+			<div class="container">
+				<div class="exlinks">
+					<a href="#m"> License </a>
+					<a href="#m"> Terms Of Service </a>
+					<a href="#m"> Privacy Policy </a>
+					<a href="#m"> Refunds </a>
+					<h4> &copy; DoBu, Inc. </h4>
+				</div>
+			</footer>
+		</footer>
+		<script type="text/javascript" src="../js/script.js"></script>
+	</body>
+</html>

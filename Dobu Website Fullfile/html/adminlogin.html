@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Admin Sign Up </title>
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/signup.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/e39a0a873c.js" crossorigin="anonymous"></script>
+		
+		<link rel="icon" type="image/png" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="../imgs/favicon/site.webmanifest">
+		<link rel="mask-icon" href="../imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="fone"> 
+					<a href="index.html" class="logo">
+						<span>Do</span>Bu 
+					</a>
+				</div>
+				<i class="fa-solid fa-bars" id="menubtn"></i>
+				<div class="ftwo"> 
+					<nav class="navbar">
+						<a href="facility.html"> Facilities </a>
+						<a href="instructors.html"> Instrutors </a>
+						<a href="classes.html"> Classes </a>
+						<a href="services.html"> Services </a>
+						<a href="signup.html" class="wtf"> Sign Up Now </a>
+						<a href="adminlogin.html"  style="border: 2px solid black;"> Admin Login </a>
+					</nav>
+				</div>
+			</div>
+			
+		</header>
+		<section class="admin-login container">
+			<form onsubmit="authenticate(event)">
+				<div> 
+					<label for="username"> Username: </label>
+					<input id="username" type="text" placeholder="Enter the Admin Name!" required/>
+				</div>
+				<div>
+					<label for="password"> Password: </label>
+					<input id="password" type="password" placeholder="Enter Password" required/>
+				</div>
+				<button type="submit" class="login-button"> Log In </button>
+				<div id="error-message" class="error-message"> </div>
+			</form>
+		</section>
+
+		</section>
+		<footer class="lis">
+			<div class="container">
+				<div class="exlinks">
+					<a href="#m"> License </a>
+					<a href="#m"> Terms Of Service </a>
+					<a href="#m"> Privacy Policy </a>
+					<a href="#m"> Refunds </a>
+					<h4> &copy; DoBu, Inc. </h4>
+				</div>
+			</footer>
+		</footer>
+		<script src="../js/script.js">
+
+
+		</script>
+
+
+	</body>
+</html>
